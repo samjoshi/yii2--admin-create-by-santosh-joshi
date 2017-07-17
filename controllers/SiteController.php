@@ -59,7 +59,9 @@ class SiteController extends Controller {
 
         return $this->render('index');
     }
-
+    /** 
+     * This funtion  for login.
+     */
     public function actionLogin() {
         $this->layout='main_login';
         if (!\Yii::$app->user->isGuest) {
